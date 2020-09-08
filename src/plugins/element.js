@@ -26,7 +26,8 @@ import { Button,
     Tag,
     Tree,
     Select,
-    Option
+    Option,
+    Cascader
  } from 'element-ui'
 
 // 导入消息提示组件
@@ -60,6 +61,7 @@ Vue.use(Tag)
 Vue.use(Tree)
 Vue.use(Select)
 Vue.use(Option)
+Vue.use(Cascader)
 // 全局挂载消息提示组件 挂载在原型对象上
 Vue.prototype.$message = Message
 Vue.prototype.$confirm = MessageBox.confirm
