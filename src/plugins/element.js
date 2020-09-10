@@ -1,7 +1,8 @@
 import Vue from 'vue'
-import { Button,
-    Form, 
-    FormItem, 
+import {
+    Button,
+    Form,
+    FormItem,
     Input,
     Container,
     Header,
@@ -30,8 +31,13 @@ import { Button,
     Cascader,
     Alert,
     Tabs,
-    TabPane
- } from 'element-ui'
+    TabPane,
+    Steps,
+    Step,
+    CheckboxGroup,
+    Checkbox,
+    Upload
+} from 'element-ui'
 
 // 导入消息提示组件
 import { Message } from 'element-ui'
@@ -68,6 +74,11 @@ Vue.use(Cascader)
 Vue.use(Alert)
 Vue.use(Tabs)
 Vue.use(TabPane)
+Vue.use(Steps)
+Vue.use(Step)
+Vue.use(CheckboxGroup)
+Vue.use(Checkbox)
+Vue.use(Upload)
 // 全局挂载消息提示组件 挂载在原型对象上
 Vue.prototype.$message = Message
 Vue.prototype.$confirm = MessageBox.confirm
